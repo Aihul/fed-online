@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color:#f6f5f5;
+    font-family: 'Inter', sans-serif;
+
+}
+.container{
+    width:360px;
+    margin:100px auto;
+    border-radius: 20px;
+    background-color: #FFF;
+    padding:56px 20px 91px 24px;
+}
+h1{
+    color: #000;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+button{
+    border: none;
+    background-color: #fff;
+    margin-bottom: 23px;
+}
+.search{
+    width: 316px;
+    height: 44px;
+    border-radius: 12px;
+    background-color: #EFEFEF;
+    border: none;
+    font-family: Inter;
+    margin:17px 0 29px 0;
+}
+input::placeholder {
+    color:#999;
+    padding: 15px 15px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.menu_items{
+    padding: 0 4px;
+}
+.position-img{
+    border-radius: 12px;
+    background-color: #EFEFEF;
+    width: 74px;
+    height: 74px;
+    padding: 18px;
+}
+.position-title{
+    color: #C4C4C4;
+    text-align: center;
+    margin:8px 0 32px 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.menu-position{
+    display: inline-block;
+    align-items: center;
+}
+.menu-position:hover .position-img{
+    background-color: #EAE2B7;
+}
+.menu-position:hover .position-title{
+    color: black;
+}
+.menu-position:nth-child(2){
+    margin:0 20px;
+}
+h2{
+    color: #003049;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.menu_burger{
+    margin-top: 26px;
+}
+.position-burger{
+    border-radius: 10px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 4px 0px #E5E5E5;
+    max-width: 316px;
+    height: 88px;
+    margin-bottom: 12px;
+}
+.price{
+    display:inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+}
+.position-burger img{
+    margin: 6px 12px 13px 16px;
+}
+.position-burger .fishburger{
+    margin:18px 5px 10px 14px;
+}
+.position-burger h4{
+    color: #003049;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.position-burger h4:hover{
+    color:#D62828;
+}
+.position-burger:hover{
+    background-color:#EAE2B7;
+}
+.position-burger p{
+    color: #D62828;
+    margin-bottom: 22px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.position-burger p:hover{
+    color: #003049;
+}
