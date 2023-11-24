@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Catamaran', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: #f2f2f2;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+main{
+    width: 1243px;
+    margin:0 auto;
+    padding: 142px 0 124px;
+}
+h1>strong{
+    color: #2D3640;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+h1{
+    color: #2D3640;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: -0.5px;
+}
+.sub-title-text{
+    width: 695px;
+    color: #2B292D;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 50px;
+}
+.user-card{
+    padding: 58px 0 122px;
+    width: 295px;
+    background-color: #fff;
+    text-align: center;
+    float: left;
+    margin-right: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card-row .user-card:last-child{
+    margin-right: 0;
+}
+.user-photo{
+    width: 114px;
+    height: 114px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin:0 auto;
+    border: 3px solid #eff3f8;
+}
+.user-photo{
+    width: 114px;
+    height: 114px;
+}
+.user-card h4{
+    color: #2D3640;
+    font-family: Catamaran;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.625px;
+    margin: 34px 0 4px;
+}
+.user-card p {
+    color: #4B4F52;
+    font-family: Catamaran;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 33px;
+}
+.skills{
+    text-align: center;
+    font-size: 0;
+}
+.skill-item{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    text-align: center;
+    padding: 10px 0 0 0;
+    overflow: hidden;
+    display:inline-block ;
+    margin-right: 15px;
+}
+.skills .skill-item:last-child{
+    margin-right: 0;
+}
+.vue{
+    padding: 15px 0 0 0;
+    background-color: #41B883;;
+}
+.skill-item.angular{
+    background: #34474F;
+}
+.skill-item.flutter{
+    background: #202124;    
+}
+.flutter img{
+    width:25px;
+    height:30px;
+}
+.skill-item.react{
+    background: #61DAFB;
+    padding: 8px;
+}
+.react img{
+    width: 31px;
+    height: 33px;
+}
+.skill-item.java{
+    background-color: #D63033;
+    padding: 6px 12px 8px 12px;
+}
+.java img{
+    width: 23px;
+    height: 31px
+}
+.skill-item.reactnative{
+    background-color: #0AA9D7;
+    padding: 8px 9px;
+}
+.reactnative img{
+    width: 31px;
+    height: 33px;
+}
+.skill-item.html{
+    background-color:#E44E25;
+    padding: 11px 15px;
+}
+.html img{
+    width: 20px;
+    height: 26px;
+}
+.skill-item.css{
+    background-color: #1073BB;
+    padding: 10px 15px;
+}
+.css img{
+    width: 19px;
+    height: 27px;
+}
