@@ -47,7 +47,23 @@ h1{
     margin-right: 20px;
     border-radius: 20px;
     overflow: hidden;
+    opacity: 0.7;
 }
+.user-card:hover{
+    background-color: rgb(255, 224, 224);
+    opacity: 1.5;
+    box-shadow:
+    1px 1px #f2e1f2,
+    2px 2px #f2e1f2,
+    3px 3px #f2e1f2,
+    4px 4px #f2e1f2,
+    5px 5px #e0d0e0,
+    6px 6px #e0d0e0,
+    7px 7px #e0d0e0;
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
+}
+
 .card-row .user-card:last-child{
     margin-right: 0;
 }
@@ -58,6 +74,11 @@ h1{
     overflow: hidden;
     margin:0 auto;
     border: 3px solid #eff3f8;
+}
+.user-photo:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
 .user-photo{
     width: 114px;
@@ -73,6 +94,9 @@ h1{
     letter-spacing: -0.625px;
     margin: 34px 0 4px;
 }
+.user-card h4:hover{
+    color:red;
+}
 .user-card p {
     color: #4B4F52;
     font-family: Catamaran;
@@ -81,6 +105,11 @@ h1{
     font-weight: 300;
     line-height: normal;
     margin-bottom: 33px;
+}
+.user-card p:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
 .skills{
     text-align: center;
