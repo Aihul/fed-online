@@ -12,7 +12,8 @@ body{
     display: table;
 }
 main{
-    width: 1243px;
+    /* width: 1243px; */
+    width: 65%;
     margin:0 auto;
     padding: 142px 0 124px;
 }
@@ -30,7 +31,7 @@ h1{
     letter-spacing: -0.5px;
 }
 .sub-title-text{
-    width: 695px;
+    max-width: 695px;
     color: #2B292D;
     font-size: 20px;
     font-style: normal;
@@ -40,11 +41,14 @@ h1{
 }
 .user-card{
     padding: 58px 0 122px;
-    width: 295px;
+    /* width: 295px; */
+    width: 23%;
+    min-width: 200px;
     background-color: #fff;
     text-align: center;
     float: left;
     margin-right: 20px;
+    margin-bottom: 20px;
     border-radius: 20px;
     overflow: hidden;
     opacity: 0.7;
@@ -68,8 +72,8 @@ h1{
     margin-right: 0;
 }
 .user-photo{
-    width: 114px;
-    height: 114px;
+    max-width: 114px;
+    max-height: 114px;
     border-radius: 100%;
     overflow: hidden;
     margin:0 auto;
@@ -81,8 +85,8 @@ h1{
     transform: scale(1.2);
 }
 .user-photo{
-    width: 114px;
-    height: 114px;
+    width: 100%;
+    height: auto;
 }
 .user-card h4{
     color: #2D3640;
@@ -120,7 +124,7 @@ h1{
     height: 50px;
     border-radius: 100%;
     text-align: center;
-    padding: 10px 0 0 0;
+    padding: 10px;
     overflow: hidden;
     display:inline-block ;
     margin-right: 15px;
