@@ -242,7 +242,6 @@ button span:hover{
     margin-right: 19px;
     border: 2px solid #FFF;
     opacity: 0.6;
-    max-width: 100%;
 }
 .poster-film img:last-child{
     margin-right: 0;
@@ -278,4 +277,146 @@ button span:hover{
     background-color: #D40D1F;
     color:black;
     font-size: 26px;
+}
+@media (max-width:1360px){
+    header{
+        padding-bottom:40px;
+    }
+    .content .conteiner {
+        width: 80%;
+    }
+    h3{
+        font-weight: 400;
+    }
+    h1{
+        font-size: 56px;
+        margin: 20px 0;
+    }
+    .info-block{
+        font-weight: 400;
+    }
+    .icon p{
+        font-weight: 700;
+    }
+    .icon {
+        justify-content: flex-start;
+        gap: 50px;
+    }
+    .button-play, .button-two{
+        width: 200px;
+        height: 60px;
+    }
+    .poster-film{
+        display: inline-block;
+    }
+    .poster-film img{
+        width: 35%;
+        padding-bottom: 15px;
+        border: none;
+    }
+    .button-info{
+        width: 160px;
+        height: 66px;
+    }
+    button span{
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+@media (max-width:800px){
+    header .conteiner{
+        flex-direction: column;
+    }
+    .header-logo{
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .header-logo p{
+        margin-top: 10px;
+    }
+    .logo-netflix::after{
+        display: none;
+    }
+    .fa-magnifying-glass{
+        font-size: 1.0em;
+    }
+    .client-photo {
+        max-width: 60px;
+        max-height: 60px;
+    }
+    .content .conteiner{
+        margin: 0 auto;
+    }
+    .film-genre{
+       display: inline-block;
+    }
+    h1{
+        font-size: 46px;
+        margin: 10px auto;
+    }
+    .info-block{
+        display: inline-block;
+    }
+    h2{
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+    span{
+        font-size: 20px;
+    }
+    .data::after{
+        display: none;
+    }
+    .text-content::after{
+        display: none;
+    }
+    .items::after{
+        display: none;
+    }
+    .text-info{
+        font-size: 20px;
+        padding: 0;
+    }
+    .icons-item{
+        padding-bottom: 40px;
+        justify-content: center;
+    }
+    .button-block{
+        display: inline-block;
+        text-align: start;
+    }
+    .button-play{
+        margin-bottom: 15px;
+    }
+    .button-play, .button-two{
+        width: 160px;
+        height: 50px;
+        span{
+            font-size: 12px;
+        }
+    }
+    .button-info{
+        width: 100px;
+        height: 40px;
+        font-size: 18px;
+    }
+    .button-info::before{
+        display: none;
+    }
+    .footer .conteiner{
+        width: 80%;
+        margin:0 auto;
+        padding-bottom: 30px;
+    }
+    .icon{
+        gap: 10px;
+        justify-content: center;
+        p{
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+    }
+    .poster-film img{
+        width: 40%;
+    }
 }
