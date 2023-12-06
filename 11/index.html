@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                    <div class="header-logo">
+                        <h3>Travelers</h3>
+                    </div>
+                    <div class="header-block">
+                    <div class="header-menu">
+                        <nav class="header-l">
+                            <ul class="header-link">
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Destinations</a>
+                                </li>
+                                <li>
+                                    <a href="#">Gallery</a>
+                                </li>
+                                <li>
+                                    <a href="#">About Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="button-block">
+                        <button class="header-button" type="button" name="button-menu">
+                            <span>Book Guide</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="bg-image">
+            <div class="container">
+                <div class="main-content">
+                    <div class="content-text">
+                        <h2>
+                            Know the <span>BEST</span> places to visit when you are on <span>VACATION</span>
+                        </h2>
+                        <p>
+                            We offer the best and relaxing atmosphere and have one of the best deal to sweeten your vacation and make it a trip to remember. We have luxurious destinations around the world.
+                        </p>
+                    </div>
+                    <div class="block-after">
+                    </div>
+                    <div class="search-content">
+                        <div class="search-text">
+                            <p>Where will we take you</p>
+                            <i class="fa-solid fa-chevron-right fa-beat-fade" style="--fa-animation-duration: 2s;"></i>
+                        </div>
+                        <div class="select-block">
+                            <div class="custom-select">
+                                <i class="fa-solid fa-chevron-down fa-beat-fade" style="--fa-animation-duration: 2s;" ></i>
+                                <select>
+                                  <option value="0">Country</option>
+                                  <option value="1">UA</option>
+                                  <option value="2">Canada</option>
+                                  <option value="3">USA</option>
+                                </select>
+                              </div>
+                              <div class="custom-select">
+                                <i class="fa-solid fa-chevron-down fa-beat-fade" style="--fa-animation-duration: 2s;"></i>
+                                <select>
+                                  <option value="0">City</option>
+                                  <option value="1">Kharkiv</option>
+                                  <option value="2">Odesa</option>
+                                  <option value="3">Kiev</option>
+                                </select>
+                              </div>
+                              <div class="custom-select">
+                                <i class="fa-solid fa-chevron-down fa-beat-fade fa-beat-fade" style="--fa-animation-duration: 2s;"></i>
+                                <select>
+                                  <option value="0">Place</option>
+                                  <option value="1">Nature</option>
+                                  <option value="2">Forest</option>
+                                  <option value="3">Sea</option>
+                                  <option value="4">Mountain</option>
+                                </select>
+                              </div>
+                              <div class="button-content">
+                                <button class="button-search">
+                                    <span> Search Place</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer-block">
+                    <p>See Destinations</p>
+                    <div>
+                        <i class="fa-solid fa-chevron-down  fa-flip" style="--fa-animation-duration: 2s;"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-chevron-down fa-flip" style="--fa-animation-duration: 2s;"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+<script>
+            var x, i, j, selElmnt, a, b, c;
+x = document.getElementsByClassName("custom-select");
+for (i = 0; i < x.length; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < selElmnt.length; j++) {
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        var y, i, k, s, h;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < s.length; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            for (k = 0; k < y.length; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+  });
+}
+function closeAllSelect(elmnt) {
+  var x, y, i, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  for (i = 0; i < y.length; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < x.length; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+        </script>
+    </div>
+</body>
+</html>
