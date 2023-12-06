@@ -12,11 +12,8 @@ body{
     width: 100%;
 } 
 .wrapper{
-    background-image: url(../img/Rectangle.png);
-    background-attachment: fixed; 
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
+    background: url(../img/Rectangle.png) no-repeat top center fixed;
+    background-size:cover;
     padding:42px 33px 49px 50px;
 }
 header{
@@ -324,6 +321,10 @@ button span:hover{
     }
 }
 @media (max-width:800px){
+    .wrapper{
+        background-position: 80% 80%;
+        /* background-position: top right; */
+    }
     header .conteiner{
         flex-direction: column;
     }
